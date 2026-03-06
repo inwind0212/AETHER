@@ -1,0 +1,66 @@
+{
+"type": "FeatureCollection",
+"name": "poi_example",
+"features": [
+{
+"type": "Feature",
+"properties": {
+"id": 1,
+"name": "Example Cafe",
+"description": "A place of cafe, a type of food and drink, named Example Cafe."
+},
+"geometry": {
+"type": "Point",
+"coordinates": [-0.1340, 51.5230]
+}
+},
+{
+"type": "Feature",
+"properties": {
+"id": 2,
+"name": "Central Library",
+"description": "A place of library, a type of education, named Central Library."
+},
+"geometry": {
+"type": "Point",
+"coordinates": [-0.1325, 51.5242]
+}
+},
+{
+"type": "Feature",
+"properties": {
+"id": 3,
+"name": "City Park",
+"description": "A place of park, a type of recreation, named City Park."
+},
+"geometry": {
+"type": "Point",
+"coordinates": [-0.1362, 51.5228]
+}
+},
+{
+"type": "Feature",
+"properties": {
+"id": 4,
+"name": "Community Hospital",
+"description": "A place of hospital, a type of health services, named Community Hospital."
+},
+"geometry": {
+"type": "Point",
+"coordinates": [-0.1318, 51.5219]
+}
+},
+{
+"type": "Feature",
+"properties": {
+"id": 5,
+"name": "Metro Station",
+"description": "A place of metro station, a type of transport, named Metro Station."
+},
+"geometry": {
+"type": "Point",
+"coordinates": [-0.1351, 51.5247]
+}
+}
+]
+}

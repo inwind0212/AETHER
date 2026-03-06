@@ -1,0 +1,15 @@
+# python
+__pycache__/
+*.pyc
+*.pyo
+
+# env
+.venv/
+env/
+
+# outputs
+cache/
+cache_downstream/
+
+# system
+.DS_Store

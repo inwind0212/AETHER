@@ -1,0 +1,52 @@
+# =========================
+# Global configuration file (2-loss: img–img, img–txt)
+# Temperatures are FIXED (not learnable); autosave filename uses ae_type/text_type/suffix (no timestamp).
+# =========================
+
+data:
+  poi_path: "./data/poi/uk_poi_with_name.geojson"
+  aef_tif: "./data/AE/UK_alphaearth_embedding_2024.tif"
+  crs: "EPSG:27700"
+
+  feat_mode: "pixel"     
+  pix_radius: 0             
+  aug_pix_radius: 1          
+
+  split_seed: 42
+  val_ratio: 0.0
+  test_ratio: 0.0
+
+text:
+  backend: "hf"            # "hf" | "openai"
+  hf_model: "sentence-transformers/all-MiniLM-L6-v2"  # for "hf" backend
+  openai_model: "text-embedding-3-small"
+  emb_dim: 384
+  batch_size: 1024
+
+model:
+  ae_type: "AEProj"       
+  text_type: "TextProj"
+  suffix: "UK_t3s"   # appended to autosave filename      
+  hidden_dim: 256              
+  out_dim: 128 
+  lambda: 0.2
+
+  tau_img: 0.07
+  tau_xt: 0.07
+
+  lr: 1e-3
+  weight_decay: 1e-4
+  betas: [0.9, 0.999]
+
+train:
+  device: "cuda:1"
+  batch_size: 4096
+  num_workers: 4
+  epochs: 100
+
+eval:
+  topk: [1, 5, 10]
+
+logging:
+  ckpt_path: "auto"            
+  cache_dir: "cache"
