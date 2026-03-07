@@ -123,11 +123,11 @@ where:
 To transform AlphaEarth embeddings into AETHER embeddings:
 
 ```bash
-python infer_aether_raster.py \
-  --ae_tif data/AE/UK_alphaearth_embedding_2024.tif \
-  --ckpt /home/jliu/code/AE/outputs/tri2_AEProj-TextProj_UK_t3s_pix0-aug1_tau0.07-0.07_lam0.20_h256_l1_d128_bs4096_lr1e-03_epo100/ckpts/epoch_0100.pth \
-  --out data/AE/AETHER_embedding.tif
-
+    python infer_aether_raster.py \
+    --ae_tif ./data/AE/Alphaearth_embedding_2024.tif \
+    --ckpt ./ckpts/epoch_0100.pth \
+    --out ./outputs/AETHER_embedding.tif
+```
 
 ## Citation
 
