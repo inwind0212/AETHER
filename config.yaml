@@ -13,9 +13,9 @@ data:
 
 text:
   backend: "openai"            # "hf" | "openai"
-  hf_model: "sentence-transformers/all-MiniLM-L6-v2"  # for "hf" backend
-  openai_model: "text-embedding-3-large"
-  emb_dim: 384
+  hf_model: "sentence-transformers/all-MiniLM-L6-v2" # for "hf" backend
+  openai_model: "text-embedding-3-large"  
+  emb_dim: 384  # openai only
   batch_size: 1024
 
 model:
