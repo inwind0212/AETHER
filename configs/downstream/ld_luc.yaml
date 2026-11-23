@@ -1,0 +1,12 @@
+# London land-use classification (LUC). The points are available from the authors on request (NLUD licence).
+task: luc
+city: London
+features: {raster: data/embeddings/London_AETHER.tif, mode: buffer, buffer_m: 50, normalize: true}
+target: {path: data/downstream/ld_luc_points.geojson, label_col: landuse_id}
+class_balance: true
+hidden: 128
+batch_size: 128
+epochs: 100
+patience: 10
+lr: 1.0e-3
+save_root: outputs/downstream

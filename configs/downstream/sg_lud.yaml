@@ -1,0 +1,13 @@
+# Singapore land-use distribution mapping (LUD) on H3 resolution-9 cells. "Undefined" is shown as "Other" in the paper.
+task: lud
+city: Singapore
+features: {raster: data/embeddings/Singapore_AETHER.tif, mode: polygon, normalize: true}
+target:
+  path: data/downstream/sg_lud_h3.geojson
+  class_cols: [Agriculture, Civic/Community, Commercial, Green Space, Industrial, Mixed Use, Residential, Transportation, Undefined, Utility/Infrastructure, Water]
+hidden: 128
+batch_size: 128
+epochs: 100
+patience: 10
+lr: 1.0e-3
+save_root: outputs/downstream

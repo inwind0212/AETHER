@@ -1,0 +1,12 @@
+# Singapore GDP mapping: 2020 total GDP (PPP) of Kummu et al. (2025), v3, band 7, on EPSG:3414 (1,436 cells).
+# Targets are z-scored with training statistics, and metrics are on the original scale (MAE and RMSE in 1e9 int. $).
+task: gdp
+city: Singapore
+features: {raster: data/embeddings/Singapore_AETHER.tif, mode: buffer, buffer_m: 500, normalize: true}
+target: {path: data/downstream/sg_gdp_2020_3414.tif, transform: none, metric_space: original, report_unit: 1.0e9}
+hidden: 128
+batch_size: 128
+epochs: 100
+patience: 10
+lr: 1.0e-3
+save_root: outputs/downstream

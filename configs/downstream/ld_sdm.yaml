@@ -1,0 +1,13 @@
+# London socioeconomic distribution mapping (SDM): NS-SeC shares per LSOA.
+task: sdm
+city: London
+features: {raster: data/embeddings/London_AETHER.tif, mode: polygon, normalize: true}
+target:
+  path: data/downstream/ld_sdm_lsoa.geojson
+  class_cols: [ns-sec_1, ns-sec_2, ns-sec_3, ns-sec_4, ns-sec_5, ns-sec_6, ns-sec_7, ns-sec_8, ns-sec_9]
+hidden: 128
+batch_size: 128
+epochs: 100
+patience: 10
+lr: 1.0e-3
+save_root: outputs/downstream

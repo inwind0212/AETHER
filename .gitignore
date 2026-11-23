@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+outputs/
+cache/
+data/AE/
+data/embeddings/
+*.tif.aux.xml
+data/downstream/ld_luc_points.geojson
