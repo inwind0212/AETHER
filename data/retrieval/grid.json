@@ -1,0 +1,23 @@
+{
+  "shape": [
+    4510,
+    9400
+  ],
+  "crs": "EPSG:4326",
+  "transform": [
+    8.983152841195215e-05,
+    0.0,
+    -0.5103329129083002,
+    0.0,
+    -8.983152841195215e-05,
+    51.69193605714645,
+    0.0,
+    0.0,
+    1.0
+  ],
+  "resolution_in_crs_units": [
+    8.983152841195215e-05,
+    8.983152841195215e-05
+  ],
+  "candidate_policy": "common full raster; method masks audited separately"
+}

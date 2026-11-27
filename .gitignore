@@ -1,15 +1,8 @@
-# python
 __pycache__/
 *.pyc
-*.pyo
-
-# env
-.venv/
-env/
-
-# outputs
+outputs/
 cache/
-cache_downstream/
-
-# system
-.DS_Store
+data/AE/
+data/embeddings/
+*.tif.aux.xml
+data/downstream/ld_luc_points.geojson

@@ -1,0 +1,74 @@
+[
+  {
+    "id": "hotels_near_railway_stations__full",
+    "concept_id": "hotels_near_railway_stations",
+    "variant": "full",
+    "text": "A place of hotels and visitor accommodation close to railway or underground stations"
+  },
+  {
+    "id": "pubs_near_theatres_cinemas_concert_halls__full",
+    "concept_id": "pubs_near_theatres_cinemas_concert_halls",
+    "variant": "full",
+    "text": "A place of pubs and bars close to theatres, cinemas, or concert halls"
+  },
+  {
+    "id": "religious_places_in_westminster__full",
+    "concept_id": "religious_places_in_westminster",
+    "variant": "full",
+    "text": "A place of religious places, churches, mosques, temples, and faith institutions in Westminster"
+  },
+  {
+    "id": "riverside_pubs_bars__full",
+    "concept_id": "riverside_pubs_bars",
+    "variant": "full",
+    "text": "A place of pubs, bars, and inns located close to the river or waterfront"
+  },
+  {
+    "id": "hotels_near_railway_stations__bare",
+    "concept_id": "hotels_near_railway_stations",
+    "variant": "CQ",
+    "text": "A place of hotels and visitor accommodation"
+  },
+  {
+    "id": "pubs_near_theatres_cinemas_concert_halls__bare",
+    "concept_id": "pubs_near_theatres_cinemas_concert_halls",
+    "variant": "CQ",
+    "text": "A place of pubs and bars"
+  },
+  {
+    "id": "religious_places_in_westminster__bare",
+    "concept_id": "religious_places_in_westminster",
+    "variant": "CQ",
+    "text": "A place of religious places, churches, mosques, temples, and faith institutions"
+  },
+  {
+    "id": "riverside_pubs_bars__bare",
+    "concept_id": "riverside_pubs_bars",
+    "variant": "CQ",
+    "text": "A place of pubs, bars, and inns"
+  },
+  {
+    "id": "hotels_near_railway_stations__spatial_substitution_hospitals",
+    "concept_id": "hotels_near_railway_stations",
+    "variant": "SQ",
+    "text": "A place of hotels and visitor accommodation close to hospitals"
+  },
+  {
+    "id": "pubs_near_theatres_cinemas_concert_halls__spatial_substitution",
+    "concept_id": "pubs_near_theatres_cinemas_concert_halls",
+    "variant": "SQ",
+    "text": "A place of pubs and bars close to the river or waterfront"
+  },
+  {
+    "id": "religious_places_in_westminster__spatial_substitution",
+    "concept_id": "religious_places_in_westminster",
+    "variant": "SQ",
+    "text": "A place of religious places, churches, mosques, temples, and faith institutions in Greenwich"
+  },
+  {
+    "id": "riverside_pubs_bars__spatial_substitution",
+    "concept_id": "riverside_pubs_bars",
+    "variant": "SQ",
+    "text": "A place of pubs, bars, and inns located close to theatres, cinemas, or concert halls"
+  }
+]

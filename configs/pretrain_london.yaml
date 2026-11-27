@@ -1,0 +1,41 @@
+# AETHER pretraining configuration (London).
+# Settings used for the checkpoint in the paper.
+
+data:
+  poi_path: "data/poi/ld_poi.geojson"     # POIs with a `description` field (see README)
+  aef_tif: "data/AE/London_Embedding_2024AEF.tif"   # 64-band AlphaEarth 2024 raster
+  crs: "EPSG:27700"            # working CRS of the POIs
+  pix_radius: 4             # base view, 9x9 pixels
+  aug_pix_radius: 9         # augmented view, 19x19 pixels
+
+text:
+  backend: "openai"         # "openai" | "hf"
+  openai_model: "text-embedding-3-large"
+  hf_model: "sentence-transformers/all-MiniLM-L6-v2"   # used when backend = "hf"
+  emb_dim: 384
+  batch_size: 1024
+
+model:
+  ae_type: "AEProj"         # AEProj | AEProjLinear | AEProj4Layer | AEProjTransformer3
+  text_type: "TextProj"
+  suffix: "LD"
+  hidden_dim: 256
+  out_dim: 128
+  lambda: 0.2               # weight of the AE-AE consistency loss
+  tau_img: 0.07
+  tau_xt: 0.07
+  lr: 1.0e-3
+  weight_decay: 1.0e-4
+  betas: [0.9, 0.999]
+
+train:
+  seed: 42
+  device: "cuda:0"
+  batch_size: 512
+  num_workers: 4
+  epochs: 100
+  eta_min_ratio: 0.01
+
+logging:
+  cache_dir: "cache"
+  save_every: 10

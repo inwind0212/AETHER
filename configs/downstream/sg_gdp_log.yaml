@@ -1,0 +1,11 @@
+# Singapore GDP mapping on u = log(1 + GDP), z-scored with training statistics. Metrics are in the standardized log space.
+task: gdp
+city: Singapore
+features: {raster: data/embeddings/Singapore_AETHER.tif, mode: buffer, buffer_m: 500, normalize: true}
+target: {path: data/downstream/sg_gdp_2020_3414.tif, transform: log1p, metric_space: standardized}
+hidden: 128
+batch_size: 128
+epochs: 100
+patience: 10
+lr: 1.0e-3
+save_root: outputs/downstream
